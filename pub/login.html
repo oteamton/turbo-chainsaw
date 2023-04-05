@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+		<div class="logo">
+			<a href="#">My Website</a>
+		</div>
+		<nav>
+			<div class="toggle">
+				<i class="fas fa-bars"></i>
+			</div>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<main>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Login" class="btn btn-primary">
+        </div>
+        </form>
+        <button class="register-btn button-primary" href="register.html">Register</button>
+    </div>
+    
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+		$(document).ready(() => {
+			$('.register-btn').click(() => {
+			window.location.href = 'D:/P2/pub/register.html';
+			});
+		});
+		</script>
+  <script src="app.js"></script>
+</body>
+</html>

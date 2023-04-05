@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="#">My Website</a>
+		</div>
+		<nav>
+			<div class="toggle">
+				<i class="fas fa-bars"></i>
+			</div>
+			<ul class="menu">
+				<li><a href="login.html">Login</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<h2>Register</h2>
+			<form action="/register" method="POST">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label for="birthday">Birthday:</label>
+					<input type="date" id="birthday" name="birthday" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label for="work">Work:</label>
+					<input type="text" id="work" name="work" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Register" class="btn btn-primary">
+				</div>
+			</form>
+		</div>
+	</main>
+
+	<script src="app.js"></script>
+</body>
+</html>

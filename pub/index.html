@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Homepage</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="#">My Website</a>
+		</div>
+		<nav>
+			<div class="toggle">
+				<i class="fas fa-bars"></i>
+			</div>
+			<ul class="menu">
+                <li><a href="login.html">Login</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container">
+			<h2>Section 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat ultrices libero, sed faucibus arcu tincidunt at.</p>
+		</section>
+		<section class="container">
+			<h2>Section 2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat ultrices libero, sed faucibus arcu tincidunt at.</p>
+		</section>
+		<section class="container">
+			<h2>Section 3</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat ultrices libero, sed faucibus arcu tincidunt at.</p>
+		</section>
+		<section class="container">
+			<h2>Section 4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat ultrices libero, sed faucibus arcu tincidunt at.</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>Copyright &copy; 2023</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+		$(document).ready(() => {
+			$('.register-btn').click(() => {
+			window.location.href = '/register';
+			});
+		});
+		</script>
+	<script src="app.js"></script>
+</body>
+</html>

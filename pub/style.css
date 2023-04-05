@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.menu li {
+  margin: 0 10px;
+}
+
+nav ul.menu li a {
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul.menu li a:hover {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+nav .toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  nav .toggle {
+    display: block;
+  }
+  nav .toggle i {
+    font-size: 24px;
+    color: #333;
+  }
+
+  nav .menu {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .menu.active {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    z-index: 99;
+    overflow-y: auto;
+  }
+
+  nav .menu.active li {
+    margin: 20px 0;
+    display: block;
+  }
+
+  nav .menu.active li a {
+    color: #fff;
+    padding: 10px;
+  }
+}
+
+/* Main Content */
+main {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: 30px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .container h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  }
+  
+  .container p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  }
+  
+  .container a.button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  }
+  
+  .container a.button:hover {
+  background-color: #fff;
+  color: #333;
+  }
+  
+  /* Footer */
+  footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  }
+  
+  footer p {
+  margin-bottom: 10px;
+  }
+  
+  footer a {
+  color: #fff;
+  text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 480px) {
+  .container {
+  max-width: 100%;
+  }
+  }
+
+
+/* login.html******************/
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+
+.button-primary.register-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-primary.register-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
